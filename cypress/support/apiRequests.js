@@ -1,7 +1,4 @@
 
-const { baseUrl } = require('./config')
-
-
 class ApiRequests {
 
     getRequest(endPoint) {
@@ -12,7 +9,7 @@ class ApiRequests {
         });
     }
 
-    postRequest(endPoint) {
+    postRequest(endPoint, requestBody) {
         return cy.request({
 
             method: 'POST',
